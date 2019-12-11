@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "trivia app build with react native + redux",
+    "githubUrl": "https://github.com/jdv0194/rn-trivia"
   }
 }

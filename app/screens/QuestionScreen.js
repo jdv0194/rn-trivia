@@ -101,6 +101,7 @@ class QuestionScreen extends Component {
     } = this.props.data;
 
     const entities = new Entities();
+    console.log(this.props.data);
 
     return isFetching || questions.length === 0 ? (
       <View style={styles.container}>

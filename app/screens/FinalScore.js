@@ -6,6 +6,7 @@ import { clear } from "../redux/actions/questionAction";
 
 class FinalScore extends Component {
   render() {
+    console.log(this.props.data.question);
     const styles = StyleSheet.create({
       container: {
         flex: 1,
@@ -74,9 +75,10 @@ class FinalScore extends Component {
         </View>
         <View style={styles.button_view}>
           <TouchableOpacity
-            onPress={
-              (this.props.clear(), () => this.props.navigation.navigate("Home"))
-            }
+            onPress={() => {
+              this.props.clear;
+              this.props.navigation.navigate("Home");
+            }}
           >
             <Text style={styles.button}>Back Home</Text>
           </TouchableOpacity>
